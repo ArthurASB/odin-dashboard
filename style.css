@@ -12,6 +12,11 @@
 
 }
 
+.search-area {
+    display: flex;
+    justify-content: space-between;
+}
+
 .main-content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
@@ -26,6 +31,26 @@
 
     display: grid;
     grid-template-rows: 1fr 4fr 7fr;
+    gap: 40px;
+}
+
+.sectionitem, .title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.title img.titlelogo{
+    width: 60px;
+}
+
+.sidebar p.titletext{
+    font-size: 35px;
+}
+
+.sidebar img{
+    width: 35px;
 }
 
 .sidebar p{

@@ -6,15 +6,12 @@
     --secondary-color: #08a1f7;
 }
 
-
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background-color: white;
     display: grid;
 }
-
-/* Unificar esse código se for o caso */
 
 .search-area {
     display: flex;
@@ -100,7 +97,6 @@
     padding: 0 50px;
 }
 
-
 .user-buttons button{
     padding: 15px 30px;
     background-color: var(--secondary-color);
@@ -120,8 +116,22 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: var(--main-color);
+    display: grid;
+    grid-template-columns: 5fr 1fr;
 
 }
+
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.project-cards > div {
+    background-color: white;
+}
+
 
 .sidebar {
     grid-column: 1 / 2;

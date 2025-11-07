@@ -169,12 +169,23 @@
 
 .extra-content {
     padding: 15px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
 
 }
 
 .project-title, .announce-title, .trend-title {
     font-weight: bold;
     font-size: 20px;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+}
+
+.trend-card {
+    background-color: white;
 }
 
 

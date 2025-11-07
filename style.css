@@ -137,8 +137,35 @@
     background-color: white;
     border-left: 10px solid bisque;
     border-radius: 10px;
-    padding: 15px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.card-text p {
+    margin-top: 0;
+    text-align: left;
+}
+
+.card-text p:first-child {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.share-links {
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+.share-links img {
+    width: 25px;
+}
+
 
 .extra-content {
     padding: 15px;

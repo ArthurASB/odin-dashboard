@@ -169,7 +169,6 @@
     width: 25px;
 }
 
-
 .extra-content {
     padding: 15px;
     display: grid;
@@ -179,7 +178,23 @@
 
 .announce-card {
     background-color: white;
+    padding: 30px;
+    border-radius: 10px;
 
+}
+
+.announce-card .announce-news:nth-child(2) {
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.announce-news p {
+    line-height: 15px;
+}
+
+.announce-news p:first-child {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .project-title, .announce-title, .trend-title {
@@ -218,9 +233,6 @@
     margin: 0 20px;
     border-radius: 30px;
 }
-
-
-
 
 .sidebar {
     grid-column: 1 / 2;

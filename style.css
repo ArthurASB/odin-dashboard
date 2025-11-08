@@ -6,12 +6,15 @@
     --secondary-color: #08a1f7;
 }
 
+.header, .trend-card, .announce-card, .project-cards > div {
+    box-shadow: 0px 4px 5px 0px lightgray;
+}
+
 .header {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     background-color: white;
     display: grid;
-    box-shadow: 0px 4px 5px 0px lightgray;
     position: sticky;
 }
 
@@ -119,7 +122,7 @@
     grid-row: 2 / 3;
     background-color: var(--main-color);
     display: grid;
-    grid-template-columns: minmax(1100px, 5fr) 2fr;
+    grid-template-columns: minmax(1050px, 5fr) 2fr;
 }
 
 .projects {
@@ -128,7 +131,7 @@
 
 .project-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 520px));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 500px));
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
 }
@@ -174,6 +177,11 @@
 
 }
 
+.announce-card {
+    background-color: white;
+
+}
+
 .project-title, .announce-title, .trend-title {
     font-weight: bold;
     font-size: 20px;
@@ -186,7 +194,32 @@
 
 .trend-card {
     background-color: white;
+    border-radius: 10px;
+    min-width: 350px;
+    padding-bottom: 20px;
 }
+
+.trending-users {
+    display: flex;
+    margin-top: 25px;
+}
+
+.trend-user-info p {
+    margin: 8px;
+}
+
+.trend-user-info p:first-child {
+    font-weight: bold;
+}
+
+.trending-users img {
+    height: 60px;
+    width: 60px;
+    margin: 0 20px;
+    border-radius: 30px;
+}
+
+
 
 
 .sidebar {
